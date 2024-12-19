@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Biblioteca de Clásicos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Año</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="book-table"></tbody>
+    </table>
+
+    <form id="book-form">
+        <input type="hidden" id="book-id">
+        <input type="text" id="book-title" placeholder="Título" required>
+        <input type="text" id="book-author" placeholder="Autor" required>
+        <input type="number" id="book-year" placeholder="Año" required>
+        <button type="submit">AÑADIR LIBRO</button>
+    </form>
+
+    <script src="script2.js"></script>
+</body>
+</html>
